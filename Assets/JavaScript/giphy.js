@@ -26,17 +26,13 @@ $('button').on('click', function() {
         for (var i=0; i <response.data.length; i++) {
         console.log(response.data[0].rating);
 
-        var topicDiv = $('<div>');
-        var p = $('<p>').text("Rating: " + response.data[i].rating + "</p>");
-        var topicImage = $('<img>');
-        topicImage.attr('src', response.data[i].images.fixed_height.url);
-        topicDiv.append(p);
-        topicDiv.append(topicImage);
-        $('#gifsGohere').append(topicDiv);
-      
+        // var topicDiv = $('<div>');
+        var datasearchImage = $('<img>');
+        datasearchImage.attr('src', response.data[i].images.fixed_height.url);
 
-          // $('body').append("<p>Rating: " + response.data[0].rating + "</p>");
-          // $('body').append("<img src=' " +response.data[0].images.downsized.url +"'>");
+
+          $('body').append("<p>Rating: " + response.data[0].rating + "</p>");
+          $('body').append("<img src=' " +response.data[0].images.downsized.url +"'>");
           
         
         }
@@ -57,3 +53,8 @@ $('button').on('click', function() {
     //   $(this).attr("data-state", "still");
     // }
 
+
+
+    //Need to add Mobile Responsiveness
+    //Allow users to request additional gifs
+    //Add to portfolio
