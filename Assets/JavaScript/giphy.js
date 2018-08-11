@@ -78,6 +78,6 @@ $('#addSearch').on('click', function(){
   console.log(newSearch);
   searchArray.push(newSearch);
   console.log(searchArray);
-  populateButtons(searchArray, '.searchButton', '#buttonsArea');
+  populateButtons(searchArray, 'searchButton', '#buttonsArea');
   return false;
 })

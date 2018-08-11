@@ -4,6 +4,19 @@ body {
     background: #b8d6e9
 }
 
+form {
+
+position: relative;
+right: 300px;
+width: 400px;
+top: 30px;
+padding: 19px;
+box-sizing: border-box;
+border: 2px solid  #006e99;
+background:  #006e99;
+border-radius: 28px;
+}
+
 #searches {
     width: 70%;
 }
@@ -12,14 +25,14 @@ body {
     float: left;
     padding: 20px;
 }
-
 form {
-    width: 30%;
+
     float: right;
     padding: 20px;
-}
+} 
 
 label {
+    color: white;
     display: block;
     font-weight: 700;
     margin-bottom: 10px;
@@ -55,8 +68,20 @@ button:active {
 }
 
 h1 {
+    padding: 61px;
     text-align: center;
-    color: #006e99;
+    color: #ffffff;
     font-size: 40px;
+    box-sizing: border-box;
+    border: 2px solid #006e99;
+    background: #006e99
+
+    /* border-radius: 10px; */
+
     
+}
+
+#addsearch {
+    background: white;
+    color:  #006e99;
 }
